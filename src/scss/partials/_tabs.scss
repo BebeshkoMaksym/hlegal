@@ -1,0 +1,110 @@
+.tabs{
+    margin: 0 auto;
+    margin-bottom: 60px;
+    @media screen and (max-width: 1023px) {
+        padding:0 60px;
+        
+    }
+    @media screen and (max-width: 767px){
+        padding: 0 30px;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 1023px){
+            display: block;
+        }
+    }
+    &__list{
+        position: relative;
+        text-align: end;
+        margin-right: 60px;
+        @media screen and (max-width: 1023px){
+            display: flex;
+            width: 100;
+            overflow: auto;
+            margin-bottom: 124px;
+            
+        }
+        &::after{
+            content: '';
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            height: 303px;
+            top: 0;
+            left: 436px;
+            position: absolute;
+            @media screen and (max-width: 1023px){
+              display: none;
+            }
+    }
+   
+    }
+    &__item{
+        width: 375px;
+        margin-bottom: 30px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &__link{
+        display: block;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        color: $dark-grey;
+        &:hover{
+            color: $red;
+            opacity: 1;
+        }
+        &:focus{
+            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }   
+        @media screen and (max-width: 1023px){
+            white-space: nowrap;
+        } 
+    }
+    &__content{
+        text-align: start;
+        margin-left: 60px;
+        padding: 73px 0;
+        display: none;
+        &.active{
+            display: block;
+        }
+        @media screen and ( max-width:1439px){
+            padding: 0;
+        }
+        @media screen and ( max-width:1023px) {
+            padding: 0 ;
+            margin: 0;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                border-top: 4px solid rgba(255, 255, 255, 0.3);
+                top: -60px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+            }         
+          }
+    }
+    &__heading{
+        max-width: 861px;   
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $white;
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $white;
+    }
+}
+

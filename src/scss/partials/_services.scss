@@ -1,0 +1,98 @@
+.services{
+    padding-bottom: 60px;
+    @media screen and (max-width: 1023px) {
+        padding:0 60px;
+        
+      }
+    @media screen and (max-width:767px) {
+        padding: 0 30px 30px; 
+    }
+    &__upper-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        color: $blue;
+        text-transform: uppercase;
+        &:hover{
+            color: red;
+            &::after{
+                border-color: $red;
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 6px;
+            right: -8px;
+            width: 4px;
+            height: 4px;
+            color: $blue;
+            border-bottom: 2px solid;
+            border-right: 2px solid;
+            transform: rotate(-45deg);
+        }
+    }
+    &__heading{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 60px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        @media screen and (max-width: 1023px){
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+        @media screen and (max-width: 767px){
+            gap: 30px;
+        }
+    }
+    &__item{
+        text-align: left;
+        padding: 10px;
+        @media screen and (max-width: 374px) {
+            display: block;
+            text-align: left; 
+        }
+    }
+    &__background-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 92px;
+        height: 92px;
+        background: $white;
+        border-radius: 24px;
+        margin-bottom: 30px;
+    }
+    &__header{       
+        margin-bottom: 15px;
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: #24A3FF;
+        &:hover{
+            color: $red;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $white;
+    }
+} 
+    
+

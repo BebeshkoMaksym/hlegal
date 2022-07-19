@@ -1,0 +1,104 @@
+.clients{
+    padding: 0 100px;
+    margin-bottom: 60px;
+    @media screen and (max-width:1919px){
+        padding: 0;
+        margin: 0;
+    }
+    &__header{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+        @media screen and (max-width:1919px){
+            border-radius: 0;
+        }
+    }
+    &__item{
+        width: 25%;
+        @media screen and (max-width:1023px){
+            width: 33.33333%;
+        }
+        @media screen and (max-width:767px){
+            width: 100%;
+        }
+    }
+    &__link{
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        transition: all 0.3s;
+        &_1{
+            background: #1C4280;
+        }
+        &_2{
+            background: #143646;
+        }
+        &_3{
+            background: #F48B30;
+        }
+        &_4{
+            background: #9E4DC3;
+        }
+        &_5{
+            background: #FD9339;
+        }
+        &_6{
+            background: #E2E2E4;
+        }
+        &_7{
+            background: #C71C36;
+            @media screen and (max-width:767px){
+                display: none;
+            }
+        }
+        &_8{
+            background: #DCF3F9;
+            @media screen and (max-width:767px){
+                display: none;
+            }
+        }
+        &_9{
+            background: #EAEAEA;
+            @media screen and (max-width:767px){
+                display: none;
+            }
+        }
+        &_10{
+            background: #282240;
+            @media screen and (max-width:767px){
+                display: none;
+            }
+        }
+        &_11{
+            background: #1D4568;
+            @media screen and (max-width:767px){
+                display: none;
+            }
+        }
+        &_12{
+            background: #000000;
+            @media screen and (max-width:767px){
+                display: none;
+            }
+        }
+        &:hover{
+            transform: scale(1.05);
+            border-radius: 12px;
+        }
+    }
+}

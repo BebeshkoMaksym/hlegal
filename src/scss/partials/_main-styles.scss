@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  font:400 16px/26px 'Montserrat', sans-serif;
+  font-style: normal;
+  color: $white;
+}
+.logo{
+  @media screen and (max-width:1023px){
+      margin-bottom: 25px;
+  }
+}
+.main__background{
+  margin-bottom: 60px;
+  background: $main-background;
+  width: 100%;
+  padding: 0 160px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    background: #CACADB;
+    width: calc(100% - 40px);
+    height: 10px;
+    left: 20px;
+    bottom: -10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    background: #E7E7F2;
+    width: calc(100% - 80px);
+    height: 10px;
+    left: 40px;
+    bottom: -20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  @media screen and ( max-width: 1919px) {
+    padding: 0 60px;
+  }
+  @media screen and ( max-width: 1023px){
+    padding: 0;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    
+  }
+
+}
